@@ -2,5 +2,7 @@
 *.o
 *.ko
 *.cmd
-*.mod
+*.mod*
+*.order
+*.symvers
 compile_commands.json
