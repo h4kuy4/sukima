@@ -4,7 +4,7 @@ A simple linux kernel rootkit.
 
 ## Features
 
-- [ ] get root permission
+- [x] get root permission
 - [ ] hide process
 - [ ] hide file
 - [ ] hide module
