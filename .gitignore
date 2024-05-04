@@ -1,0 +1,6 @@
+.cache
+*.o
+*.ko
+*.cmd
+*.mod
+compile_commands.json
