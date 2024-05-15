@@ -1,28 +1,10 @@
+#pragma once
+
 #include <linux/fs.h>
 #include <linux/kern_levels.h>
 #include <linux/printk.h>
 
 #define MODULE_NAME "sukima"
-
-#ifndef SILENT
-#define LOG_I(...)            \
-    printk(KERN_INFO "[INFO]" \
-                     "[" MODULE_NAME "] " __VA_ARGS__)
-#define LOG_D(...)              \
-    printk(KERN_DEBUG "[DEBUG]" \
-                      "[" MODULE_NAME "] " __VA_ARGS__)
-#define LOG_W(...)               \
-    printk(KERN_WARNING "[WARN]" \
-                        "[" MODULE_NAME "] " __VA_ARGS__)
-#define LOG_E(...)            \
-    printk(KERN_ERR "[ERROR]" \
-                    "[" MODULE_NAME "] " __VA_ARGS__)
-#else
-#define LOG_I(...)
-#define LOG_D(...)
-#define LOG_W(...)
-#define LOG_E(...)
-#endif
 
 #define DEVICE_NAME "sukima"
 #define CLASS_NAME "sukima"
